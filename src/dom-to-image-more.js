@@ -1032,7 +1032,7 @@
     }
 
     function newInliner() {
-        const URL_REGEX = /url\(['"]?([^'"]+?)['"]?\)/g;
+        const URL_REGEX = /url\((['"]?)([^'"]+?)\1\)/g;
 
         return {
             inlineAll: inlineAll,
