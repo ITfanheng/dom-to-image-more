@@ -1,29 +1,5 @@
 # DOM to Image
-
-[![Version](https://img.shields.io/npm/v/dom-to-image-more.svg?style=flat-square)](https://npmjs.com/package/dom-to-image-more)
-[![Bundle Size](https://img.shields.io/bundlephobia/minzip/dom-to-image-more?style=flat-square)](https://bundlephobia.com/result?p=dom-to-image-more)
-[![Open Issues](https://img.shields.io/github/issues/1904labs/dom-to-image-more?style=flat-square)](https://github.com/1904labs/dom-to-image-more/issues)
-[![GitHub Repo stars](https://img.shields.io/github/stars/1904labs/dom-to-image-more?style=social)](https://github.com/1904labs/dom-to-image-more)
-[![Twitter](https://img.shields.io/twitter/follow/idisposable.svg?style=social&label=Follow)](https://www.twitter.com/idisposable)
-
-## Breaking Change Notice
-
-The 3.x release branch included some breaking changes in the very infrequently used
-ability to configure some utility methods used in this internal processing of
-dom-to-image-more. As browsers have matured, many of the hacks we're accumulated over the
-years are not needed, or better ways have been found to handle some edge-cases. With the
-help of folks like @meche-gh, in #99 we're stripping out the following members:
-
--   `.mimes` - was the not-very-comprehensive list of mime types used to handle inlining
-    things
--   `.parseExtension` - was a method to extract the extension from a filename, used to
-    guess mime types
--   `.mimeType` - was a method to map file extensions to mime types
--   `.dataAsUrl` - was a method to reassemble a `data:` URI from a Base64 representation
-    and mime type
-
-The 3.x release branch should also fix more node compatibility and `iframe` issues.
-
+add support for url path like url('@font-face { font-family: codicon; font-display: block; src: url("file:///C:/Program%20Files%20(x86)/FStudio-Unified/resources/app/lib/frontend/2fa1fcf53c57a51b064d.ttf") format("truetype"); }')
 ## What is it
 
 **dom-to-image-more** is a library which can turn arbitrary DOM node, including same
