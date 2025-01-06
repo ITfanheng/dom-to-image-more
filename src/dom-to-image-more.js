@@ -1051,7 +1051,7 @@
             const result = [];
             let match;
             while ((match = URL_REGEX.exec(string)) !== null) {
-                result.push(match[1]);
+                result.push(match[2]);
             }
             return result.filter(function (url) {
                 return !util.isDataUrl(url);
