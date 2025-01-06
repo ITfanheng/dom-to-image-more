@@ -939,7 +939,11 @@
                         encoder.onloadend = function () {
                             resolve(encoder.result);
                         };
-                        encoder.readAsDataURL(request.response);
+                        try {
+                            encoder.readAsDataURL(request.response);
+                        } catch (e) {
+                            fail('corsImg.data is missing or invalid:' + e.toString());
+                        }
                     }
 
                     function timeout() {
