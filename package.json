@@ -1,6 +1,6 @@
 {
-    "name": "dom-to-image-more",
-    "version": "3.5.0",
+    "name": "dom-to-image-more-fy",
+    "version": "0.0.1",
     "description": "Generates an image from a DOM node using HTML5 canvas and SVG",
     "main": "dist/dom-to-image-more.min.js",
     "devDependencies": {
@@ -35,7 +35,7 @@
         "rc-version": "npm version $(semver $npm_package_version -i prerelease --preid rc)",
         "final-release": "npm version $(semver $npm_package_version -i)"
     },
-    "repository": "github:1904labs/dom-to-image-more",
+    "repository": "github:ITfanheng/dom-to-image-more",
     "keywords": [
         "dom",
         "image",
@@ -46,7 +46,7 @@
         "svg",
         "png"
     ],
-    "author": "Marc Brooks <idisposable@gmail.com> (https://about.me/IDisposable)",
+    "author": "fh",
     "contributors": [
         "Anatolii Saienko <anatoly.sayenko@gmail.com>",
         "Marc Brooks <idisposable@gmail.com>",
@@ -74,7 +74,7 @@
     ],
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/1904labs/dom-to-image-more/issues"
+        "url": "https://github.com/ITfanheng/dom-to-image-more/issues"
     },
-    "homepage": "https://github.com/1904labs/dom-to-image-more#readme"
+    "homepage": "https://github.com/ITfanheng/dom-to-image-more#readme"
 }
